@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive admin dashboard</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="uil uil-apple"></i>
+                        </span>
+                        <span class="title"><h2>Brand Name</h2></span>
+                    </a>
+                </li>
+                  
+                <li>
+                    <a  href="#">
+                        <span class="icon">
+                             <i class="uil uil-home"></i></span>
+                        <span class="title">Dash Board</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="uil uil-user"></i></span>
+                        <span class="title">Customer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="uil uil-message"></i></span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="uil uil-question-circle"></i></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="uil uil-setting"></i></span>
+                        <span class="title">Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="uil uil-lock"></i></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="uil uil-signout"></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"><i id="icon" class="uil uil-bars"></i></div>
+                <div class="search">
+                    <label>
+                        <i class="uil uil-search-alt"></i>
+                        <input type="text" placeholder="Search here">
+                    </label>
+                         
+                </div>
+                <div class="user">
+                    <img src="ninja.png" alt="why?">
+                </div> 
+            </div>
+            <div class="cardbox">
+             	<div class="card">
+             		<div>
+            			<div class="numbers">1042</div>
+            			<div class="cardname">daily Vieews</div>
+            	  	</div>
+            	  	<div class="iconbox">
+                        <i class="uil uil-eye"></i>
+            	  	</div>
+             	</div>
+             <div class="card">
+             		<div>
+            			<div class="numbers">80</div>
+            			<div class="cardname">sales</div>
+            	  	</div>
+            	  	<div class="iconbox">
+                        <i class="uil uil-shopping-cart-alt"></i>
+            	  	</div>
+             	</div>
+             <div class="card">
+             		<div>
+            			<div class="numbers">208</div>
+            			<div class="cardname">comments</div>
+            	  	</div>
+            	  	<div class="iconbox">
+                        <i class="uil uil-comment"></i>
+            	  	</div>
+             	</div>
+             <div class="card">
+             		<div>
+            			<div class="numbers">$6042</div>
+            			<div class="cardname">earning</div>
+            	  	</div>
+            	  	<div class="iconbox">
+                        <i class="uil uil-dollar-alt"></i>
+            	  	</div>
+             	</div>	
+            </div>
+            <div class="details">
+            	 <div class="recentorders">
+            	  	<div class="cardheader">
+            				<h2>recent orders</h2>
+            				<a class="btn" href="#">viewall</a>
+            		 </div>
+            		 <table>
+            		 	<thead>
+            		 		<tr>
+            		 			<td>Name</td>
+            		 			<td>Price</td>
+            		 			<td>Payment</td>
+            		 			<td>Status</td>
+            		 		</tr>
+            		 	</thead>
+            		 	<tbody>
+            		 		<tr>
+            		 			<td>Refrigretor</td>
+            		 			<td>$1200</td>
+            		 			<td>Due</td>
+                                <td><span class="status inprogress">delivered</span></td>
+            		 		</tr>
+            		 		<tr>
+            		 			<td>Tv</td>
+            		 			<td>$11200</td>
+            		 			<td>paid</td>
+            		 			<td><span class="status return">Return</span></td>
+            		 		</tr>
+            		 		<tr>
+            		 			<td>Speaker</td>
+            		 			<td>$610</td>
+            		 			<td>Due</td>
+            		 			<td><span class="status delivered">delivered</span></td>
+            		 		</tr>
+            		 		<tr>
+            		 			<td>Hp Laptop</td>
+            		 			<td>$500</td>
+            		 			<td>paid</td>
+            		 			<td><span class="status return">Return</span></td>
+            		 		</tr>
+            		 		<tr>
+            		 			<td>Apple Watch</td>
+            		 			<td>$189</td>
+            		 			<td>Due</td>
+            		 			<td><span class="status pending">Pending</span></td>
+            		 		</tr>
+            		 		<tr>
+            		 			<td>Adidas Shoes</td>
+            		 			<td>$1200</td>
+            		 			<td>paid</td>
+            		 			<td><span class="status inprogress">In Progress</span></td>
+            		 		</tr>
+            		 		<tr>
+            		 			<td>refrigretor</td>
+            		 			<td>$900</td>
+            		 			<td>due</td>
+            		 			<td><span class="status pending">pending</span></td>
+            		 		</tr>
+            		 		<tr>
+            		 			<td>Wall Fan</td>
+            		 			<td>$145</td>
+            		 			<td>paid</td>
+            		 			<td><span class="status delivered">delivered</span></td>
+            		 		</tr>
+            		 	</tbody>
+            		 </table>
+             	</div>
+                 <div class="recentcustomers">
+                     <div class="cardheader">
+                         <h2>recent customers</h2>
+                     </div>
+                     <table>
+                         <tbody>
+                            <tr>
+                                <td width="60px"><div class="imgbx"><img src="ninja.png" alt=""></div></td>
+                                <td><h4>David <span>Italy</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgbx"><img src="suit.png" alt=""></div></td>
+                                <td><h4>David <span>Italy</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgbx"><img src="girl.png" alt=""></div></td>
+                                <td><h4>David <span>Italy</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgbx"><img src="ninja.png" alt=""></div></td>
+                                <td><h4>David <span>Italy</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgbx"><img src="suit.png" alt=""></div></td>
+                                <td><h4>David <span>Italy</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgbx"><img src="girl.png" alt=""></div></td>
+                                <td><h4>David <span>Italy</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgbx"><img src="ninja.png" alt=""></div></td>
+                                <td><h4>David <span>Italy</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgbx"><img src="suit.png" alt=""></div></td>
+                                <td><h4>David <span>Italy</span></h4></td>
+                            </tr>
+                         </tbody>
+                     </table>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+    </script>
+</body> 
+<html>        
